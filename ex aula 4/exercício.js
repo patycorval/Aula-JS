@@ -58,8 +58,8 @@ function tabelaAlunos(listaAlunos){
 }
 
     // MEDIA DA TURMA NA P1 E P2
-    var mediaP1=0;
-    var mediaP2=0;
+    let mediaP1=0;
+    let mediaP2=0;
      for (let i=0; i<listaAlunos.length;i++){
         mediaP1+= listaAlunos[i].p1;
         mediaP2+= listaAlunos[i].p2;
