@@ -46,12 +46,12 @@ function tabelaAlunos(listaAlunos){
          let reprovado=0;
          if (((listaAlunos[i].p1+listaAlunos[i].p2)/2)>=6){
             acumulado = acumulado 
-            + "<td style='background-color:#7d7dff'> Aprovado </td>"
+            + "<td style='background-color:#4d4dff'> Aprovado </td>"
          }
 
          else{
             acumulado = acumulado 
-            + "<td style= 'background-color:#ff6f6f'> Reprovado </td>"
+            + "<td style= 'background-color:#f32b2b'> Reprovado </td>"
          }
 
       acumulado = acumulado +"</tr>"   
@@ -80,7 +80,7 @@ function tabelaAlunos(listaAlunos){
  }
 
     acumulado = acumulado + "<tr>"
-                        + "<td colspan= class='destaque'> Média P1 da turma: </td>"
+                        + "<td colspan=1 class='destaque'> Média P1 da turma: </td>"
                         + "<td class='mediaT'>" + mediaP1.toFixed(2) + "</td>"
                         + "<td colspan=2  class='destaque'> Média P2 da turma: </td>"
                         + "<td class='mediaT'>" + mediaP2.toFixed(2) + "</td> </tr>"
@@ -94,7 +94,7 @@ function tabelaAlunos(listaAlunos){
      document.write(acumulado); 
 
      let cor= document.querySelectorAll('td.notap1, td.notap2, td.media,td.mediaT')
-     console.log(cor);
+    
      for (let i=0; i<cor.length;i++){
         if (parseInt(cor[i].innerText, 10) <6 ){
             cor[i].classList.add("vermelho");
