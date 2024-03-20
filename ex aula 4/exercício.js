@@ -105,4 +105,3 @@ function tabelaAlunos(listaAlunos){
      }
 }
 
-// oq esta escrito dentro da caixa é innerText
